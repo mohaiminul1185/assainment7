@@ -1,0 +1,257 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CS — Ticket System</title>
+
+  <!-- FONT -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- TOASTIFY -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="container nav-wrapper">
+
+      <h2 class="logo">
+        CS — Ticket System
+      </h2>
+
+      <div class="menu">
+
+        <a href="#">Home</a>
+        <a href="#">FAQ</a>
+        <a href="#">Changelog</a>
+        <a href="#">Blog</a>
+        <a href="#">Download</a>
+        <a href="#">Contact</a>
+
+        <button class="new-btn">
+          + New Ticket
+        </button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- BANNER -->
+
+  <section class="container banner">
+
+    <div class="banner-card purple">
+
+      <!-- VECTOR IMAGE -->
+
+      <img src="images/vector1.png" class="vector">
+
+      <h3>In-Progress</h3>
+
+      <h1 id="progressCount">0</h1>
+
+    </div>
+
+    <div class="banner-card green">
+
+      <!-- VECTOR IMAGE -->
+
+      <img src="images/vector2.png" class="vector">
+
+      <h3>Resolved</h3>
+
+      <h1 id="resolvedCount">0</h1>
+
+    </div>
+
+  </section>
+
+  <!-- MAIN -->
+
+  <section class="container dashboard">
+
+    <!-- LEFT -->
+
+    <div class="left-side">
+
+      <h2 class="section-title">
+        Customer Tickets
+      </h2>
+
+      <div class="tickets" id="ticketsContainer"></div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right-side">
+
+      <!-- TASK -->
+
+      <div class="right-box">
+
+        <h2 class="right-title">
+          Task Status
+        </h2>
+
+        <div id="taskStatus"></div>
+
+      </div>
+
+      <!-- RESOLVED -->
+
+      <div class="right-box">
+
+        <h2 class="right-title">
+          Resolved Task
+        </h2>
+
+        <div id="resolvedList">
+
+          <p class="empty-text">
+            No resolved tasks yet.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <!-- COLUMN -->
+
+      <div class="footer-left">
+
+        <h2>
+          CS — Ticket System
+        </h2>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+
+      </div>
+
+      <!-- COLUMN -->
+
+      <div>
+
+        <h4>Company</h4>
+
+        <a href="#">About Us</a>
+        <a href="#">Our Mission</a>
+        <a href="#">Contact Sales</a>
+
+      </div>
+
+      <!-- COLUMN -->
+
+      <div>
+
+        <h4>Services</h4>
+
+        <a href="#">Products & Services</a>
+        <a href="#">Customer Stories</a>
+        <a href="#">Download Apps</a>
+
+      </div>
+
+      <!-- COLUMN -->
+
+      <div>
+
+        <h4>Information</h4>
+
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Join Us</a>
+
+      </div>
+
+      <!-- COLUMN -->
+
+      <div>
+
+        <h4>Social Links</h4>
+
+      <a href="#">
+    <i class="fa-brands fa-x-twitter"></i>
+    @CS — Ticket System
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-facebook"></i>
+    @CS — Ticket System
+  </a>
+
+  <a href="#">
+    <i class="fa-brands fa-linkedin"></i>
+    @CS — Ticket System
+  </a>
+
+  <a href="#">
+    <i class="fa-solid fa-circle"></i>
+    support@cst.com
+  </a>
+
+</div>
+
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+      © 2025 CS — Ticket System.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+  <!-- JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

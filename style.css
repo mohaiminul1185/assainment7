@@ -1,0 +1,893 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Inter",sans-serif;
+  background:#E9E9E9;
+  color:#111827;
+}
+
+.container{
+  width:90%;
+  max-width:1320px;
+  margin:auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#fff;
+  border-bottom:1px solid #E5E7EB;
+}
+
+.nav-wrapper{
+  height:64px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:17px;
+  font-weight:700;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#444;
+  font-size:11px;
+}
+
+.new-btn{
+  width:101px;
+  height:32px;
+
+  border:none;
+  border-radius:4px;
+
+  background:#7C3AED;
+  color:white;
+
+  font-size:11px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+
+  margin-top:38px;
+}
+
+.banner-card{
+  position:relative;
+
+  height:118px;
+
+  border-radius:4px;
+
+  overflow:hidden;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:white;
+}
+
+.banner-content{
+  position:relative;
+  z-index:2;
+
+  text-align:center;
+}
+
+.purple{
+  background:linear-gradient(135deg,#6D28D9,#8B5CF6);
+}
+
+.green{
+  background:linear-gradient(135deg,#4ADE80,#0F766E);
+}
+
+.banner-card h3{
+  font-size:14px;
+  font-weight:400;
+}
+
+.banner-card h1{
+  font-size:36px;
+  font-weight:700;
+
+  margin-top:6px;
+}
+
+.vector{
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  opacity:.18;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+  display:grid;
+  grid-template-columns:2.2fr .8fr;
+  gap:16px;
+
+  margin-top:34px;
+}
+
+.section-title{
+  font-size:14px;
+  font-weight:700;
+
+  margin-bottom:14px;
+}
+
+/* TICKETS */
+
+.tickets{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.ticket-card{
+  background:#fff;
+
+  border-radius:4px;
+
+  border:1px solid #E5E7EB;
+
+  padding:12px;
+
+  cursor:pointer;
+}
+
+.ticket-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  gap:8px;
+
+  margin-bottom:8px;
+}
+
+.ticket-header h3{
+  font-size:12px;
+  font-weight:700;
+  line-height:1.4;
+}
+
+.status{
+  padding:4px 10px;
+
+  border-radius:30px;
+
+  font-size:10px;
+  font-weight:600;
+
+  white-space:nowrap;
+}
+
+.open{
+  background:#DCFCE7;
+  color:#16A34A;
+}
+
+.progress{
+  background:#FEF3C7;
+  color:#D97706;
+}
+
+.ticket-desc{
+  font-size:11px;
+  line-height:1.5;
+
+  color:#6B7280;
+
+  margin-bottom:12px;
+}
+
+.ticket-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.left-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.ticket-id{
+  font-size:10px;
+  color:#9CA3AF;
+}
+
+.priority{
+  font-size:9px;
+  font-weight:700;
+}
+
+.high{
+  color:#EF4444;
+}
+
+.medium{
+  color:#F59E0B;
+}
+
+.low{
+  color:#22C55E;
+}
+
+.right-meta{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  font-size:10px;
+
+  color:#9CA3AF;
+}
+
+/* RIGHT SIDE */
+
+.right-card{
+  background:#fff;
+
+  border-radius:4px;
+
+  padding:16px;
+
+  margin-bottom:18px;
+}
+
+.right-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:14px;
+}
+
+.right-head h2{
+  font-size:14px;
+  font-weight:700;
+}
+
+.badge{
+  background:#FEF3C7;
+  color:#D97706;
+
+  padding:4px 10px;
+
+  border-radius:30px;
+
+  font-size:10px;
+  font-weight:600;
+}
+
+.green-badge{
+  background:#DCFCE7;
+  color:#16A34A;
+}
+
+/* TASK ITEM */
+
+.task-item{
+  border:1px solid #E5E7EB;
+
+  border-radius:4px;
+
+  padding:12px;
+
+  margin-top:12px;
+}
+
+.task-item h4{
+  font-size:12px;
+  line-height:1.5;
+
+  color:#374151;
+
+  margin-bottom:12px;
+}
+
+.task-meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:12px;
+
+  font-size:10px;
+
+  color:#9CA3AF;
+}
+
+.complete-btn{
+  width:100%;
+  height:34px;
+
+  border:none;
+  border-radius:4px;
+
+  background:#16A34A;
+
+  color:white;
+
+  font-size:11px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+.resolved-item{
+  border:1px solid #E5E7EB;
+
+  border-radius:4px;
+
+  padding:12px;
+
+  margin-top:12px;
+}
+
+.resolved-item h4{
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+.resolved-item p{
+  font-size:10px;
+  color:#9CA3AF;
+}
+
+.empty-text{
+  font-size:11px;
+  color:#9CA3AF;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#000;
+
+  margin-top:60px;
+
+  padding-top:50px;
+
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+  gap:50px;
+}
+
+.footer-left h2{
+  font-size:16px;
+  margin-bottom:18px;
+}
+
+.footer-left p{
+  color:#9CA3AF;
+
+  font-size:11px;
+
+  line-height:1.9;
+
+  max-width:260px;
+}
+
+.footer-grid h4{
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.footer-grid a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-bottom:14px;
+
+  text-decoration:none;
+
+  color:#9CA3AF;
+
+  font-size:11px;
+}
+
+.copyright{
+  border-top:1px solid #222;
+
+  margin-top:45px;
+
+  padding:22px;
+
+  text-align:center;
+
+  font-size:11px;
+
+  color:#888;
+}/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Inter",sans-serif;
+  background:#E9E9E9;
+  color:#111827;
+}
+
+/* CONTAINER */
+
+.container{
+  width:90%;
+  max-width:1320px;
+  margin:auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#fff;
+  border-bottom:1px solid #E5E7EB;
+}
+
+.nav-wrapper{
+  height:64px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:17px;
+  font-weight:700;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#444;
+  font-size:11px;
+  font-weight:500;
+}
+
+.new-btn{
+  width:101px;
+  height:32px;
+
+  border:none;
+  border-radius:4px;
+
+  background:#7C3AED;
+
+  color:white;
+
+  font-size:11px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+
+  margin-top:38px;
+}
+
+.banner-card{
+  position:relative;
+
+  height:118px;
+
+  border-radius:4px;
+
+  overflow:hidden;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  color:white;
+}
+
+.purple{
+  background:linear-gradient(135deg,#6D28D9,#8B5CF6);
+}
+
+.green{
+  background:linear-gradient(135deg,#4ADE80,#0F766E);
+}
+
+.banner-card h3{
+  font-size:14px;
+  font-weight:400;
+
+  margin-bottom:6px;
+
+  z-index:2;
+}
+
+.banner-card h1{
+  font-size:36px;
+  font-weight:700;
+
+  z-index:2;
+}
+
+.vector{
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  opacity:.18;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+  display:grid;
+  grid-template-columns:2.25fr .78fr;
+  gap:16px;
+
+  margin-top:34px;
+}
+
+.section-title{
+  font-size:14px;
+  font-weight:700;
+
+  margin-bottom:14px;
+
+  color:#374151;
+}
+
+/* TICKETS */
+
+.tickets{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.ticket-card{
+  background:#fff;
+
+  border-radius:4px;
+
+  border:1px solid #E5E7EB;
+
+  padding:12px;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.ticket-card:hover{
+  transform:translateY(-2px);
+}
+
+.ticket-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  gap:8px;
+
+  margin-bottom:8px;
+}
+
+.ticket-header h3{
+  font-size:12px;
+  font-weight:700;
+  line-height:1.4;
+
+  color:#374151;
+}
+
+/* STATUS */
+
+.status{
+  padding:4px 10px;
+
+  border-radius:30px;
+
+  font-size:10px;
+  font-weight:600;
+
+  white-space:nowrap;
+}
+
+.open{
+  background:#DCFCE7;
+  color:#16A34A;
+}
+
+.progress{
+  background:#FEF3C7;
+  color:#D97706;
+}
+
+/* DESCRIPTION */
+
+.ticket-desc{
+  font-size:11px;
+
+  line-height:1.5;
+
+  color:#6B7280;
+
+  margin-bottom:12px;
+}
+
+/* FOOT */
+
+.ticket-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.left-meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.ticket-id{
+  font-size:10px;
+  color:#9CA3AF;
+}
+
+.priority{
+  font-size:9px;
+  font-weight:700;
+}
+
+.high{
+  color:#EF4444;
+}
+
+.medium{
+  color:#F59E0B;
+}
+
+.low{
+  color:#22C55E;
+}
+
+.right-meta{
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  font-size:10px;
+  color:#9CA3AF;
+}
+
+/* RIGHT SIDE */
+
+.right-box{
+  background:#fff;
+
+  border-radius:4px;
+
+  padding:14px;
+
+  margin-bottom:18px;
+}
+
+.right-title{
+  font-size:14px;
+  font-weight:700;
+
+  margin-bottom:14px;
+
+  color:#374151;
+}
+
+.task-item{
+  background:#fff;
+
+  border:1px solid #ECECEC;
+
+  border-radius:4px;
+
+  padding:10px;
+
+  margin-top:12px;
+}
+
+.task-item h4{
+  font-size:12px;
+
+  line-height:1.4;
+
+  color:#374151;
+
+  margin-bottom:10px;
+}
+
+.complete-btn{
+  width:100%;
+  height:32px;
+
+  border:none;
+
+  border-radius:3px;
+
+  background:#16A34A;
+
+  color:white;
+
+  font-size:11px;
+  font-weight:500;
+
+  cursor:pointer;
+}
+
+.empty-text{
+  font-size:11px;
+  color:#9CA3AF;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#000;
+
+  margin-top:60px;
+
+  padding-top:50px;
+
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+  gap:50px;
+}
+
+.footer-left h2{
+  font-size:16px;
+
+  margin-bottom:18px;
+}
+
+.footer-left p{
+  color:#9CA3AF;
+
+  font-size:11px;
+
+  line-height:1.9;
+
+  max-width:270px;
+}
+
+.footer-grid h4{
+  font-size:13px;
+
+  margin-bottom:18px;
+}
+
+.footer-grid a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  margin-bottom:14px;
+
+  text-decoration:none;
+
+  color:#9CA3AF;
+
+  font-size:11px;
+}
+
+.copyright{
+  border-top:1px solid #222;
+
+  margin-top:45px;
+
+  padding:22px;
+
+  text-align:center;
+
+  font-size:11px;
+
+  color:#888;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .dashboard{
+    grid-template-columns:1fr;
+  }
+
+  .tickets{
+    grid-template-columns:1fr;
+  }
+
+  .banner{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .nav-wrapper{
+    flex-direction:column;
+
+    height:auto;
+
+    padding:18px 0;
+
+    gap:16px;
+  }
+
+  .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+}
